@@ -1,0 +1,1108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: hsl(0, 0%, 100%);
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+section .leftcolumn, section .rightcolumn{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section .rightcolumn .textbox{
+    width: 65%;
+    position: relative;
+    z-index: 2;
+}
+
+section .rightcolumn .textbox h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+section .rightcolumn .textbox p{
+    color: hsl(270, 7%, 64%);
+    font-size: 1rem;
+    margin-top: 2rem;
+    line-height: 1.8rem;
+}
+
+section .rightcolumn .design{
+    position: absolute;
+    bottom: 0;
+    right: -7rem;
+    width: 60%;
+    height: 85%;
+    background: linear-gradient(45deg, hsla(293, 100%, 63%, 0.068), hsla(264, 100%, 61%, 0.068));
+    z-index: 1;
+    border-top-left-radius: 50% 40%;
+    border-top-right-radius: 50% 40%;
+}
+
+section .leftcolumn{
+    justify-content: center;
+}
+
+section .leftcolumn .design{
+    position: absolute;
+    top: 0;
+    left: -3.5rem;
+    width: 60%;
+    height: 87%;
+    background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    z-index: 1;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+
+/**Phone Design**/
+section .leftcolumn .phone{
+    width: 33%;
+    height: 65%;
+    background: hsl(270, 20%, 96%);
+    z-index: 2;
+    position: relative;
+    margin-left: 8rem;
+    box-shadow: 0.3rem 0.3rem 1.5rem 0.1rem hsl(277, 11%, 85%);
+    border: 0.5rem solid hsl(0, 0%, 100%);
+    border-radius: 1.5rem;
+}
+
+section .leftcolumn .phone header{
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+section .leftcolumn .phone header .white-tab{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1rem;
+    transform: translateX(-50%);
+    background: hsl(0, 0%, 100%);
+    width: 50%;
+    border-bottom-left-radius: 0.8rem 0.8rem;
+    border-bottom-right-radius: 0.8rem 0.8rem;
+}
+
+section .leftcolumn .phone header .profile-details{
+    display: flex;
+    padding: 1.5rem 1rem .5rem;
+    align-items: center;
+    width: 100%;
+}
+
+section .leftcolumn .phone header .profile-details .back_btn{
+    transform: rotate(180deg);
+    width: 0.3rem;
+    
+}
+
+section .leftcolumn .phone header .profile-details .menu_btn{
+    width: .2rem;
+    filter: invert(1);
+    width: .2rem;
+    margin-left: 3.5rem;
+}
+
+section .leftcolumn .phone header .profile-details .profile_pic{
+    width: 2.5rem;
+    border-radius: 50%;
+    padding: 0 .5rem;
+}
+
+section .leftcolumn .phone header .profile-details .profile_text h4{
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 100%);
+}
+
+section .leftcolumn .phone header .profile-details .profile_text p{
+    font-size: 0.5rem;
+    color: hsl(276, 100%, 81%);
+    margin-top: 0.2rem;
+}
+
+section .leftcolumn .phone .chatbox{
+    width: 65%;
+    padding: .45rem;
+    background: hsla(266, 3%, 41%, 0.11);
+    border-radius: .5rem .5rem .5rem 0;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+section .leftcolumn .phone .chatbox p{
+    font-size: .5rem;
+    color: hsl(276, 55%, 52%);
+}
+
+section .leftcolumn .phone .imagebox{
+    width: 60%;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.3srem;
+    margin: .7rem .5rem 0;
+}
+
+section .leftcolumn .phone .imagebox img{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    border-radius: .6rem;
+}
+
+section .leftcolumn .phone .chatbox-right{
+    width: 65%;
+    padding: .35rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: .5rem .5rem 0 .5rem;
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+
+section .leftcolumn .phone .chat-right-small{
+    width: 37%;
+}
+
+section .leftcolumn .phone .chatbox-right p{
+    font-size: .5rem;
+    color: hsl(271, 15%, 43%);
+}
+
+section .leftcolumn .phone .chatbox-left{
+    width: 65%;
+    padding: .35rem;
+    background: hsla(266, 3%, 41%, 0.11);
+    border-radius: .5rem .5rem .5rem 0;
+    display: flex;
+    float: left;
+    align-items: center;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+section .leftcolumn .phone .chatbox-left p{
+    font-size: .5rem;
+    color: hsl(276, 55%, 52%);
+}
+
+section .leftcolumn .phone .chat-option{
+    width: 70%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem .5rem .5rem .2rem;
+    float: left;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    background: linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+section .leftcolumn .phone .chat-option .fa{
+    width: .7rem;
+    color: hsla(276, 100%, 81%, 0.39);
+}
+
+section .leftcolumn .phone .chat-option p{
+    font-size: .4rem;
+    margin-left: .5rem;
+    color: hsl(273, 31%, 94%);
+}
+
+section .leftcolumn .phone .chat-option h5{
+    margin-left: 2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+section .leftcolumn .phone .chat-option .right-head{
+    margin-left: 3rem;
+}
+
+section .leftcolumn .phone .input{
+    width: 95%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem;
+}
+
+section .leftcolumn .phone .input p{
+    font-size: .5rem;
+    color: hsl(271, 15%, 43%);
+    margin-left: 1rem;
+}
+
+section .leftcolumn .phone .input .input-arrow{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: hsl(271, 36%, 24%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+}
+
+section .leftcolumn .phone .input .input-arrow img{
+    width: .35rem;
+}
+
+/**Developer details**/
+section .attribution{
+    position: absolute;
+    bottom: .1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .7rem;
+    text-align: center;
+}
+
+section .attribution a{
+    color: hsl(276, 55%, 52%);
+    font-size: .7rem;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+@media only screen and (max-width: 768px){
+    section{
+        overflow-y: visible;
+    }
+
+    section .leftcolumn .design{
+        position: absolute;
+        top: 0;
+        left: -16rem;
+        width: 80%;
+        height: 80%;
+        background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }    
+
+    section .leftcolumn .phone{
+        width: 60%;
+        height: 80%;
+        position: relative;
+        margin-left: -1rem;
+        border: 1rem solid hsl(0, 0%, 100%);
+        border-radius: 3rem;
+    }
+    
+    section .leftcolumn .phone header{
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    section .leftcolumn .phone header .white-tab{
+        height: 1.3rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details{
+        display: flex;
+        padding: 2.5rem 1rem 1rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .back_btn{
+        width: .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .menu_btn{
+        width: .4rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_pic{
+        width: 3.2rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text h4{
+        font-size: 1.3rem;
+        color: hsl(0, 0%, 100%);
+        display: inline-flex;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text p{
+        font-size: .8rem;
+        color: hsl(276, 100%, 81%);
+        margin-top: 0.3rem;
+    }
+    
+    section .leftcolumn .phone .chatbox{
+        width: 65%;
+        padding: .8rem;
+        background: hsla(266, 3%, 41%, 0.11);
+        border-radius: .8rem .8rem .8rem 0;
+        margin-top: .9rem;
+        margin-left: .7rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chatbox p{
+        font-size: 1rem;
+        color: hsl(276, 55%, 52%);
+    }
+
+    section .leftcolumn .phone .imagebox{
+        margin: .7rem 1rem 0;
+    }
+    
+    section .leftcolumn .phone .chatbox-right{
+        width: 60%;
+        padding: .8rem;
+        border-radius: .8rem .8rem 0 .8rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chat-right-small{
+        width: 37%;
+    }
+    
+    section .leftcolumn .phone .chatbox-right p{
+        font-size: 1rem;
+        color: hsl(271, 15%, 43%);
+    }
+    
+    section .leftcolumn .phone .chatbox-left{
+        width: 58%;
+        padding: .8rem;
+        border-radius: .8rem .8rem .8rem 0;
+        align-items: center;
+        margin-left: .8rem;
+        margin-top: .8rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chatbox-left p{
+        font-size: 1rem;
+        color: hsl(276, 55%, 52%);
+    }
+    
+    section .leftcolumn .phone .chat-option{
+        width: 70%;
+        padding: .8rem;
+        border-radius: .8rem .8rem .8rem .4rem;
+        float: left;
+        margin-left: .8rem;
+        margin-top: .5rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .fa{
+        width: .8rem;
+    }
+    
+    section .leftcolumn .phone .chat-option p{
+        font-size: .6rem;
+        margin-left: .8rem;
+    }
+    
+    section .leftcolumn .phone .chat-option h5{
+        margin-left: 8rem;
+        font-size: 1.3rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .right-head{
+        margin-left: 9.5rem;
+    }
+    
+    section .leftcolumn .phone .input{
+        width: 95%;
+        height: 3rem;
+        position: absolute;
+        bottom: 1.2rem;
+        border-radius: 2rem;
+    }
+    
+    section .leftcolumn .phone .input p{
+        font-size: .9rem;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow img{
+        width: .6rem;
+    }
+
+    section .leftcolumn, section .rightcolumn{
+        flex-basis: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section .rightcolumn .textbox{
+        width: 80%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    section .rightcolumn .textbox h1{
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    
+    section .rightcolumn .textbox p{
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+    
+    section .rightcolumn .design{
+        position: absolute;
+        right: -15rem;
+        width: 80%;
+        height: 120%;
+        background: linear-gradient(45deg, hsla(293, 100%, 63%, 0.068), hsla(264, 100%, 61%, 0.068));
+        z-index: 1;
+        border-top-left-radius: 50% 40%;
+        border-top-right-radius: 50% 40%;
+    }
+
+    section .attribution{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    section{
+        overflow-y: visible;
+    }
+
+    section .leftcolumn .design{
+        left: -9rem;
+        width: 80%;
+        height: 90%;
+    }    
+
+    section .leftcolumn .phone{
+        width: 60%;
+        height: 85%;
+        position: relative;
+        margin-left: -1rem;
+        border: .7rem solid hsl(0, 0%, 100%);
+        border-radius: 2rem;
+    }
+    
+    section .leftcolumn .phone header{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    
+    section .leftcolumn .phone header .white-tab{
+        height: .8rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details{
+        display: flex;
+        padding: 1.5rem .7rem .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .back_btn{
+        width: .5rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .menu_btn{
+        width: .3rem;
+        position: absolute;
+        right: .8rem;
+        bottom: 1.5rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_pic{
+        width: 2.5rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text h4{
+        font-size: .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text p{
+        font-size: .5rem;
+        color: hsl(276, 100%, 81%);
+        margin-top: 0.3rem;
+        margin-left: -1rem;
+    }
+    
+    section .leftcolumn .phone .chatbox{
+        padding: .5rem;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+    
+    section .leftcolumn .phone .chatbox p{
+        font-size: .5rem;
+        text-align: left;
+    }
+
+    section .leftcolumn .phone .imagebox{
+        margin: .5rem .5rem 0;
+    }
+    
+    section .leftcolumn .phone .chatbox-right{
+        width: 60%;
+        padding: .5rem;
+        border-radius: .5rem .5rem 0 .5rem;
+        margin-right: .5rem;
+        margin-top: .5rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chat-right-small{
+        width: 37%;
+    }
+    
+    section .leftcolumn .phone .chatbox-right p{
+        font-size: .5rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left{
+        width: 58%;
+        padding: .5rem;
+        border-radius: .5rem .5rem .5rem 0;
+        text-align: left;
+        margin-left: .5rem;
+        margin-top: .3rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left p{
+        font-size: .5rem;
+    }
+    
+    section .leftcolumn .phone .chat-option{
+        width: 70%;
+        padding: .2rem;
+        border-radius: .5rem .5rem .5rem .2rem;
+        float: left;
+        margin-left: .5rem;
+        margin-top: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .fa{
+        width: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option p{
+        font-size: .4rem;
+        margin-left: .8rem;
+    }
+    
+    section .leftcolumn .phone .chat-option h5{
+        margin-left: 3rem;
+        font-size: .6rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .right-head{
+        margin-left: 4rem;
+    }
+    
+    section .leftcolumn .phone .input{
+        width: 95%;
+        height: 1.8rem;
+        position: absolute;
+        bottom: .5rem;
+        border-radius: 1.5rem;
+    }
+    
+    section .leftcolumn .phone .input p{
+        font-size: .7rem;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow img{
+        width: .4rem;
+    }
+
+    section .leftcolumn, section .rightcolumn{
+        flex-basis: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section .rightcolumn .textbox{
+        width: 80%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    section .rightcolumn .textbox h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    section .rightcolumn .textbox p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    section .rightcolumn .design{
+        position: absolute;
+        right: -8rem;
+        width: 80%;
+        height: 120%;
+        background: linear-gradient(45deg, hsla(293, 100%, 63%, 0.068), hsla(264, 100%, 61%, 0.068));
+        z-index: 1;
+        border-top-left-radius: 50% 40%;
+        border-top-right-radius: 50% 40%;
+    }
+
+    section .attribution{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    section{
+        overflow-y: visible;
+    }
+
+    section .leftcolumn .design{
+        left: -9rem;
+        width: 80%;
+        height: 90%;
+    }    
+    
+    section .leftcolumn .phone{
+        width: 60%;
+        height: 90%;
+        position: relative;
+        margin-left: -1rem;
+        border: .5rem solid hsl(0, 0%, 100%);
+        border-radius: 2rem;
+    }
+    
+    section .leftcolumn .phone header{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: .4rem;
+        border-bottom-right-radius: .4rem;
+    }
+    
+    section .leftcolumn .phone header .white-tab{
+        height: .8rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details{
+        display: flex;
+        padding: 1.5rem .7rem .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .back_btn{
+        width: .5rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .menu_btn{
+        width: .25rem;
+        position: absolute;
+        right: .8rem;
+        bottom: 1.2rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_pic{
+        width: 2.5rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text h4{
+        font-size: .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text p{
+        font-size: .5rem;
+        color: hsl(276, 100%, 81%);
+        margin-top: 0.2rem;
+        margin-left: -1rem;
+    }
+    
+    section .leftcolumn .phone .chatbox{
+        padding: .5rem;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+    
+    section .leftcolumn .phone .chatbox p{
+        font-size: .5rem;
+        text-align: left;
+    }
+
+    section .leftcolumn .phone .imagebox{
+        margin: .5rem .5rem 0;
+    }
+    
+    section .leftcolumn .phone .chatbox-right{
+        width: 60%;
+        padding: .5rem;
+        border-radius: .5rem .5rem 0 .5rem;
+        margin-right: .5rem;
+        margin-top: .5rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chat-right-small{
+        width: 40%;
+    }
+    
+    section .leftcolumn .phone .chatbox-right p{
+        font-size: .5rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left{
+        width: 60%;
+        padding: .5rem;
+        border-radius: .5rem .5rem .5rem 0;
+        text-align: left;
+        margin-left: .5rem;
+        margin-top: .3rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left p{
+        font-size: .5rem;
+    }
+    
+    section .leftcolumn .phone .chat-option{
+        width: 75%;
+        padding: .5rem;
+        border-radius: .5rem .5rem .5rem .2rem;
+        float: left;
+        margin-left: .5rem;
+        margin-top: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .fa{
+        width: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option p{
+        font-size: .4rem;
+        margin-left: .8rem;
+    }
+    
+    section .leftcolumn .phone .chat-option h5{
+        margin-left: 3rem;
+        font-size: .7rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .right-head{
+        margin-left: 4rem;
+    }
+    
+    section .leftcolumn .phone .input{
+        width: 95%;
+        height: 1.8rem;
+        position: absolute;
+        bottom: .7rem;
+        border-radius: 1.5rem;
+    }
+    
+    section .leftcolumn .phone .input p{
+        font-size: .7rem;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow{
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow img{
+        width: .4rem;
+    }
+
+    section .leftcolumn, section .rightcolumn{
+        flex-basis: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section .rightcolumn .textbox{
+        width: 80%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    section .rightcolumn .textbox h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    section .rightcolumn .textbox p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    section .rightcolumn .design{
+        position: absolute;
+        right: -8rem;
+        width: 80%;
+        height: 120%;
+        background: linear-gradient(45deg, hsla(293, 100%, 63%, 0.068), hsla(264, 100%, 61%, 0.068));
+        z-index: 1;
+        border-top-left-radius: 50% 40%;
+        border-top-right-radius: 50% 40%;
+    }
+
+    section .attribution{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    section{
+        overflow-y: visible;
+    }
+
+    section .leftcolumn .design{
+        left: -8rem;
+        width: 80%;
+        height: 90%;
+    }    
+    
+    section .leftcolumn .phone{
+        width: 60%;
+        height: 85%;
+        position: relative;
+        margin-left: 0;
+        border: .5rem solid hsl(0, 0%, 100%);
+        border-radius: 2rem;
+    }
+    
+    section .leftcolumn .phone header{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: .4rem;
+        border-bottom-right-radius: .4rem;
+    }
+    
+    section .leftcolumn .phone header .white-tab{
+        height: .8rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details{
+        display: flex;
+        padding: 1.5rem .7rem .7rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .back_btn{
+        width: .4rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .menu_btn{
+        width: .2rem;
+        position: absolute;
+        right: .8rem;
+        bottom: 1.2rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_pic{
+        width: 2.3rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text h4{
+        font-size: .6rem;
+    }
+    
+    section .leftcolumn .phone header .profile-details .profile_text p{
+        font-size: .4rem;
+        color: hsl(276, 100%, 81%);
+        margin-top: 0.2rem;
+        margin-left: -1rem;
+    }
+    
+    section .leftcolumn .phone .chatbox{
+        padding: .4rem;
+        margin-top: .4rem;
+        margin-left: .4rem;
+        width: 7rem;
+    }
+    
+    section .leftcolumn .phone .chatbox p{
+        font-size: .45rem;
+        text-align: left;
+    }
+
+    section .leftcolumn .phone .imagebox{
+        margin: .5rem .5rem 0;
+    }
+    
+    section .leftcolumn .phone .chatbox-right{
+        width: 73%;
+        padding: .5rem;
+        border-radius: .5rem .5rem 0 .5rem;
+        margin-right: .5rem;
+        margin-top: .4rem;
+        text-align: left;
+    }
+    
+    section .leftcolumn .phone .chat-right-small{
+        width: 45%;
+    }
+    
+    section .leftcolumn .phone .chatbox-right p{
+        font-size: .5rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left{
+        width: 65%;
+        padding: .5rem;
+        border-radius: .5rem .5rem .5rem 0;
+        text-align: left;
+        margin-left: .5rem;
+        margin-top: .3rem;
+    }
+    
+    section .leftcolumn .phone .chatbox-left p{
+        font-size: .45rem;
+    }
+    
+    section .leftcolumn .phone .chat-option{
+        width: 80%;
+        padding: .5rem;
+        border-radius: .5rem .5rem .5rem .2rem;
+        float: left;
+        margin-left: .5rem;
+        margin-top: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .fa{
+        width: .4rem;
+    }
+    
+    section .leftcolumn .phone .chat-option p{
+        font-size: .35rem;
+        margin-left: .5rem;
+    }
+    
+    section .leftcolumn .phone .chat-option h5{
+        margin-left: 3rem;
+        font-size: .6rem;
+    }
+    
+    section .leftcolumn .phone .chat-option .right-head{
+        margin-left: 4rem;
+    }
+    
+    section .leftcolumn .phone .input{
+        width: 95%;
+        height: 1.8rem;
+        position: absolute;
+        bottom: .7rem;
+        border-radius: 1.5rem;
+    }
+    
+    section .leftcolumn .phone .input p{
+        font-size: .6rem;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow{
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+    
+    section .leftcolumn .phone .input .input-arrow img{
+        width: .4rem;
+    }
+
+    section .leftcolumn, section .rightcolumn{
+        flex-basis: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section .rightcolumn .textbox{
+        width: 80%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    section .rightcolumn .textbox h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    section .rightcolumn .textbox p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    section .rightcolumn .design{
+        position: absolute;
+        right: -8rem;
+        width: 80%;
+        height: 120%;
+        background: linear-gradient(45deg, hsla(293, 100%, 63%, 0.068), hsla(264, 100%, 61%, 0.068));
+        z-index: 1;
+        border-top-left-radius: 50% 40%;
+        border-top-right-radius: 50% 40%;
+    }
+
+    section .attribution{
+        display: none;
+    }
+}
