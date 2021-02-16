@@ -852,7 +852,7 @@ section .attribution a{
         width: 95%;
         height: 1.8rem;
         position: absolute;
-        bottom: .7rem;
+        bottom: .6rem;
         border-radius: 1.5rem;
     }
     
@@ -1026,7 +1026,7 @@ section .attribution a{
     
     section .leftcolumn .phone .chat-option{
         width: 80%;
-        padding: .5rem;
+        padding: .4rem;
         border-radius: .5rem .5rem .5rem .2rem;
         float: left;
         margin-left: .5rem;
