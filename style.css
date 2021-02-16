@@ -520,12 +520,12 @@ section .attribution a{
     section .leftcolumn .design{
         left: -9rem;
         width: 80%;
-        height: 90%;
+        height: 70%;
     }    
 
     section .leftcolumn .phone{
         width: 60%;
-        height: 85%;
+        height: 65%;
         position: relative;
         margin-left: -1rem;
         border: .7rem solid hsl(0, 0%, 100%);
@@ -621,11 +621,11 @@ section .attribution a{
     
     section .leftcolumn .phone .chat-option{
         width: 70%;
-        padding: .2rem;
+        padding: .5rem;
         border-radius: .5rem .5rem .5rem .2rem;
         float: left;
         margin-left: .5rem;
-        margin-top: .4rem;
+        margin-top: .5rem;
     }
     
     section .leftcolumn .phone .chat-option .fa{
@@ -648,7 +648,7 @@ section .attribution a{
     
     section .leftcolumn .phone .input{
         width: 95%;
-        height: 1.8rem;
+        height: 2rem;
         position: absolute;
         bottom: .5rem;
         border-radius: 1.5rem;
@@ -718,12 +718,12 @@ section .attribution a{
     section .leftcolumn .design{
         left: -9rem;
         width: 80%;
-        height: 90%;
+        height: 75%;
     }    
     
     section .leftcolumn .phone{
         width: 60%;
-        height: 90%;
+        height: 70%;
         position: relative;
         margin-left: -1rem;
         border: .5rem solid hsl(0, 0%, 100%);
@@ -779,16 +779,20 @@ section .attribution a{
     }
     
     section .leftcolumn .phone .chatbox p{
-        font-size: .5rem;
+        font-size: .55rem;
         text-align: left;
     }
 
     section .leftcolumn .phone .imagebox{
         margin: .5rem .5rem 0;
     }
+
+    section .leftcolumn .phone .imagebox img{
+        width: 2.2rem;
+    }
     
     section .leftcolumn .phone .chatbox-right{
-        width: 60%;
+        width: 65%;
         padding: .5rem;
         border-radius: .5rem .5rem 0 .5rem;
         margin-right: .5rem;
@@ -797,11 +801,11 @@ section .attribution a{
     }
     
     section .leftcolumn .phone .chat-right-small{
-        width: 40%;
+        width: 45%;
     }
     
     section .leftcolumn .phone .chatbox-right p{
-        font-size: .5rem;
+        font-size: .55rem;
     }
     
     section .leftcolumn .phone .chatbox-left{
@@ -888,7 +892,7 @@ section .attribution a{
     }
     
     section .rightcolumn .textbox p{
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 2rem;
     }
     
@@ -916,12 +920,12 @@ section .attribution a{
     section .leftcolumn .design{
         left: -8rem;
         width: 80%;
-        height: 90%;
+        height: 80%;
     }    
     
     section .leftcolumn .phone{
         width: 60%;
-        height: 85%;
+        height: 75%;
         position: relative;
         margin-left: 0;
         border: .5rem solid hsl(0, 0%, 100%);
@@ -986,6 +990,10 @@ section .attribution a{
         margin: .5rem .5rem 0;
     }
     
+    section .leftcolumn .phone .imagebox img{
+        width: 2rem;
+    }
+
     section .leftcolumn .phone .chatbox-right{
         width: 73%;
         padding: .5rem;
@@ -1047,7 +1055,7 @@ section .attribution a{
         width: 95%;
         height: 1.8rem;
         position: absolute;
-        bottom: .7rem;
+        bottom: .6rem;
         border-radius: 1.5rem;
     }
     
@@ -1087,7 +1095,7 @@ section .attribution a{
     }
     
     section .rightcolumn .textbox p{
-        font-size: 1rem;
+        font-size: .85rem;
         line-height: 2rem;
     }
     
